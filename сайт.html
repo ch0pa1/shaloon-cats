@@ -1,0 +1,166 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Питомник ShaLoon — Мейн Куны</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-color: #2e3b4e;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 30px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: url('https://images.unsplash.com/photo-1581873372796-b97e8c04f5f1?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      color: #2e3b4e;
+    }
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .cats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .cat-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .cat-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .cat-card .info {
+      padding: 15px;
+    }
+    .contact-form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .contact-form label, .contact-form input, .contact-form textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .contact-form button {
+      background: #2e3b4e;
+      color: rgb(255, 255, 255);
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #2e3b4e;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Питомник ShaLoon</h1>
+    <p>Кошки породы Мейн Кун</p>
+  </header>
+
+  <section class="hero">
+    <h2>Добро пожаловать в ShaLoon</h2>
+    <p>Разведение взрослых породистых мейн-кунов: черный дым, черепаховая окраска, полидакты — здоровье и благородство в каждом поколении.</p>
+  </section>
+
+  <section>
+    <h3>Наши кошки</h3>
+    <div class="cats">
+      <div class="cat-card">
+        <img src="https://i.pinimg.com/736x/1b/63/bd/1b63bd36aae54b596100d763687b79e1.jpg" alt="Черный дым">
+        <div class="info">
+          <h4>Шантай</h4>
+          <p>Взрослый мейн-кун окраса черный дым. Уверенный, крупный, с мощным костяком и выразительным взглядом.</p>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img src="https://i.pinimg.com/originals/10/04/34/100434b7034bc820046f434707dd6897.jpg" alt="Черепаховая кошка">
+        <div class="info">
+          <h4>Луна</h4>
+          <p>Красивая кошка черепахового окраса. Умная, уравновешенная, очень ласковая.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Уникальность породы: Полидакт</h3>
+    <p>Мейн-куны-полидакты отличаются дополнительными пальцами на лапах. Это редкий генетический признак, передающийся по наследству и не создающий проблем для здоровья. Наоборот, полидакты считаются особенно ловкими, грациозными и устойчивыми на лапах.</p>
+  </section>
+
+  <section>
+    <h3>Бронирование котят</h3>
+    <div class="cat-card">
+      <img src="https://i08.fotocdn.net/s207/de73194440a31583/public_pin_l/2482434670.jpg" alt="Котята">
+      <div class="info">
+        <p>Хотите стать владельцем мейн-куна из питомника ShaLoon? Оставьте заявку, и мы свяжемся с вами!</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Связаться с нами</h3>
+    <div class="contact-form">
+      <form>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" value="+77054679555" required>
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ShaLoon — Питомник кошек породы Мейн Кун. Все права защищены.</p>
+  </footer>
+</body>
+<a href="file:///C:/Users/admin/сайт.html" target="_blank">Открыть сайт локально</a>
+</html>
